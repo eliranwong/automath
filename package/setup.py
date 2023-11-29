@@ -22,7 +22,7 @@ with open(os.path.join(package, "requirements.txt"), "r") as fileObj:
 # https://packaging.python.org/en/latest/guides/distributing-packages-using-setuptools/
 setup(
     name=package,
-    version="0.1",
+    version="0.2",
     python_requires=">=3.8",
     description="A simple data retriever chat, built on AutoGen framework",
     long_description=long_description,
@@ -41,7 +41,7 @@ setup(
             f"{package}=automath.automath:main",
         ],
     },
-    keywords="autogen math",
+    keywords="autogen math gpt openai",
     url="https://letmedoit.ai",
     project_urls={
         "Source": "https://github.com/eliranwong/automath",

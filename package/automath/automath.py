@@ -9,8 +9,8 @@ if not os.path.isfile(configFile):
     open(configFile, "a", encoding="utf-8").close()
 from automath import config
 
+from automath.health_check import HealthCheck
 if not config.openaiApiKey:
-    from automath.health_check import HealthCheck
     HealthCheck.changeAPIkey()
     HealthCheck.saveConfig()
     print("Updated!")
